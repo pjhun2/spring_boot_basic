@@ -20,3 +20,11 @@ public class BoApplication {
 // 정적 리소스 Spring boot 프로젝트는 별도의 커스터마이징이 없는 경우 정적 리소스 위치는
 // Static, Public , Resources , META-INF/resources
 // META-INF/resources/test/test.txt 경로에 파일이 위치할 경우 /test/test.txt이다.
+
+// 1) @controller annotation controller 역할을 수행한다고 Spring Boot Framework에 알리는 것.
+// 필요한 비즈니스 로직을 호출하여 전달할 모델과 이동할 뷰 정보를 DispatherServlet에 반환 한다.
+// Component의 구체화 된 어노테이션
+
+// 2) RequestMapping 요청에 대해 어떤 Controller, 어떤 메소드가 처리할지 맵핑하기 위한 어노테이션
+// 클래스나 메서드 선언부에 @RequestMapping과 함께 URL을 명시하여 사용한다.
+// viewName 생략 시 RequestMapping의 Path로 설정한 URL이 default viewName
